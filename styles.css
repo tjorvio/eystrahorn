@@ -68,6 +68,27 @@ h1 {
     line-height: 1.8;
 }
 
+.next-issue {
+    background: rgba(107, 114, 128, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+.next-issue h3, .next-issue h4 {
+    color: #6b7280;
+    margin-bottom: 1rem;
+
+}
+
+.next-issue h3 {
+    font-size: 1.3rem;
+}
+
+.next-issue p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
 .contact-info {
     background: rgba(107, 114, 128, 0.1);
     padding: 1.5rem;
