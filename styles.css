@@ -13,6 +13,7 @@ body {
     justify-content: center;
     color: #333;
     line-height: 1.6;
+    padding: 1rem;
 }
 
 .container {
@@ -44,6 +45,21 @@ body {
     object-fit: contain;
 }
 
+.img-container {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.styrktaradild-img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 h1 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -52,6 +68,11 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .subtitle {
@@ -69,7 +90,7 @@ h1 {
 }
 
 .next-issue {
-    background: rgba(107, 114, 128, 0.1);
+    background: rgba(217, 131, 122, 0.2);
     padding: 1.5rem;
     border-radius: 15px;
     margin-top: 2rem;
@@ -117,6 +138,43 @@ h1 {
 .contact-info a:hover {
     color: #4b5563;
     text-decoration: underline;
+}
+.cta-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.4);
+    background: linear-gradient(135deg, #0f766e, #0d9488);
+}
+
+.cta-button i {
+    margin-right: 0.5rem;
+}
+
+/* Responsive button */
+@media (max-width: 480px) {
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
 }
 
 /* Responsive Design */
