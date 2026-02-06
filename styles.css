@@ -13,6 +13,7 @@ body {
     justify-content: center;
     color: #333;
     line-height: 1.6;
+    padding: 1rem;
 }
 
 .container {
@@ -22,10 +23,100 @@ body {
     padding: 3rem 2rem;
     text-align: center;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 1200px;
     width: 90%;
     position: relative;
     overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 1;
+    text-align: center;
+}
+
+.sidebar {
+    flex: 0 0 25%;
+    text-align: left;
+}
+
+.pdf-archive {
+    background: rgba(107, 114, 128, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.pdf-archive h3 {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.pdf-archive p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.pdf-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pdf-link {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+.pdf-link:hover {
+    background: rgba(107, 114, 128, 0.1);
+    transform: translateX(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #4b5563;
+}
+
+.pdf-link i {
+    margin-right: 0.5rem;
+    color: #dc2626;
+    font-size: 1.1rem;
+}
+
+.view-all-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+    color: #4b5563;
+    text-decoration: underline;
+}
+
+.view-all-link i {
+    margin-right: 0.5rem;
 }
 
 .logo-container {
@@ -44,14 +135,34 @@ body {
     object-fit: contain;
 }
 
+.img-container {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.styrktaradild-img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     background: linear-gradient(135deg, #6b7280, #9ca3af);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .subtitle {
@@ -66,6 +177,27 @@ h1 {
     color: #555;
     margin-bottom: 2rem;
     line-height: 1.8;
+}
+
+.next-issue {
+    background: rgba(217, 131, 122, 0.2);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+.next-issue h3, .next-issue h4 {
+    color: #6b7280;
+    margin-bottom: 1rem;
+
+}
+
+.next-issue h3 {
+    font-size: 1.3rem;
+}
+
+.next-issue p {
+    color: #666;
+    margin-bottom: 0.5rem;
 }
 
 .contact-info {
@@ -96,4 +228,106 @@ h1 {
 .contact-info a:hover {
     color: #4b5563;
     text-decoration: underline;
+}
+.cta-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.4);
+    background: linear-gradient(135deg, #0f766e, #0d9488);
+}
+
+.cta-button i {
+    margin-right: 0.5rem;
+}
+
+/* Responsive button */
+@media (max-width: 480px) {
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .logo {
+        max-height: 100px;
+    }
+    
+    .container {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .sidebar {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .pdf-archive {
+        text-align: center;
+    }
+    
+    .pdf-link {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .logo {
+        max-height: 80px;
+    }
+    
+    .container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .pdf-archive {
+        padding: 1rem;
+    }
+    
+    .pdf-link {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
 }
